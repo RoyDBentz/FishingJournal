@@ -16,5 +16,22 @@ namespace FishingJournal.Controllers
             var model = new EntryListItem[0];
             return View(model);
         }
+
+        // GET
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(EntryCreate model)
+        {
+            if (ModelState.IsValid)
+            {
+
+            }
+            return View(model);
+        }
     }
 }
