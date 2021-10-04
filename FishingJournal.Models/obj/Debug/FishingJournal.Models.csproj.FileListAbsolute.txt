@@ -1,0 +1,16 @@
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\FishingJournal.Models.dll.config
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\FishingJournal.Models.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\FishingJournal.Models.pdb
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\EntityFramework.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\EntityFramework.xml
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\obj\Debug\FishingJournal.Models.csproj.AssemblyReference.cache
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\obj\Debug\FishingJournal.Models.csproj.CoreCompileInputs.cache
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\obj\Debug\FishingJournal.Models.csproj.CopyComplete
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\obj\Debug\FishingJournal.Models.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\obj\Debug\FishingJournal.Models.pdb
