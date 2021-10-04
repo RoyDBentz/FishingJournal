@@ -67,6 +67,30 @@ namespace FishingJournal.Controllers
             return View(model);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, EntryEdit model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            if(model.EntryId != id)
+            {
+                ModelState.AddModelError("", "Id Mismatch");
+                return View(model);
+            }
+
+            var service = CreateEntryService();
+
+            if (service.UpdateEntry(model))
+            {
+                TempData["SaveResult"] = "Your entry was updated.";
+                return RedirectToAction("Index");
+            }
+
+            ModelState.AddModelError("", "Your entry could not be updated.");
+            return View();
+        }
+
         private EntryService CreateEntryService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
