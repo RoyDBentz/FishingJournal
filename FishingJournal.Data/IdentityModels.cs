@@ -32,7 +32,7 @@ namespace FishingJournal.Data
             return new ApplicationDbContext();
         }
         
-        public DbSet<Note> Notes { get; set; }
+        public DbSet<Entry> Entries { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
