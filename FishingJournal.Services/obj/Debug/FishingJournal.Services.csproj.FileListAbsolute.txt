@@ -3,8 +3,14 @@ D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Services.pdb
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\EntityFramework.dll
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Data.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Models.dll
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Data.pdb
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Data.dll.config
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Models.pdb
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Models.dll.config
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\EntityFramework.xml
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\EntityFramework.SqlServer.xml
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
@@ -14,9 +20,3 @@ D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\obj
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\obj\Debug\FishingJournal.Services.csproj.CopyComplete
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\obj\Debug\FishingJournal.Services.dll
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\obj\Debug\FishingJournal.Services.pdb
-D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Data.dll
-D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Models.dll
-D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Data.pdb
-D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Data.dll.config
-D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Models.pdb
-D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Models.dll.config

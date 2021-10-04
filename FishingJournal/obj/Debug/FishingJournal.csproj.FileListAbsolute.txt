@@ -1,5 +1,3 @@
-D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal\obj\Debug\FishingJournal.csproj.AssemblyReference.cache
-D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal\obj\Debug\FishingJournal.csproj.CoreCompileInputs.cache
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal\bin\FishingJournal.dll.config
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal\bin\FishingJournal.dll
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal\bin\FishingJournal.pdb
@@ -112,6 +110,8 @@ D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal\bin\Microsof
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal\bin\Microsoft.Owin.Security.OAuth.xml
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal\obj\Debug\FishingJournal.csproj.AssemblyReference.cache
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal\obj\Debug\FishingJournal.csproj.CoreCompileInputs.cache
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal\obj\Debug\FishingJournal.csproj.CopyComplete
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal\obj\Debug\FishingJournal.dll
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal\obj\Debug\FishingJournal.pdb
