@@ -13,6 +13,7 @@ namespace FishingJournal.Data
         public int EntryId { get; set; }
         public Guid OwnerId { get; set; }
         // public DateTime Date { get; set; }
+        public DateTimeOffset? ModifiedUtc { get; set; }
         public int TotalFishCaught { get; set; }
         public int WeatherId { get; set; }
         public int LureId { get; set; }

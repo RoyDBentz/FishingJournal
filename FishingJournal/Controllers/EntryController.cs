@@ -53,6 +53,20 @@ namespace FishingJournal.Controllers
             return View(model);
         }
 
+        public ActionResult Edit(int id)
+        {
+            var service = CreateEntryService();
+            var detail = service.GetEntryById(id);
+            var model =
+                    new EntryEdit
+                    {
+                        EntryId = detail.EntryId,
+                        Content = detail.Content
+                    };
+
+            return View(model);
+        }
+
         private EntryService CreateEntryService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
