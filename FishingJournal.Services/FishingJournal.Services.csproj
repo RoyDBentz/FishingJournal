@@ -54,11 +54,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntryService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FishingJournal.Data\FishingJournal.Data.csproj">
+      <Project>{1f64c661-fcb3-4645-b41e-a1572179ee01}</Project>
+      <Name>FishingJournal.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FishingJournal.Models\FishingJournal.Models.csproj">
+      <Project>{eb448a16-953f-4efc-bdff-1af6e7df223b}</Project>
+      <Name>FishingJournal.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

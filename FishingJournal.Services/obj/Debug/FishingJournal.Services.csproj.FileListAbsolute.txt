@@ -14,3 +14,9 @@ D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\obj
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\obj\Debug\FishingJournal.Services.csproj.CopyComplete
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\obj\Debug\FishingJournal.Services.dll
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\obj\Debug\FishingJournal.Services.pdb
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Data.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Models.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Data.pdb
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Data.dll.config
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Models.pdb
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\FishingJournal.Models.dll.config

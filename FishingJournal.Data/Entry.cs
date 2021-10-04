@@ -11,14 +11,15 @@ namespace FishingJournal.Data
     {
         [Key]
         public int JournalEntryId { get; set; }
-        public DateTime Date { get; set; }
+        public Guid OwnerId { get; set; }
+        // public DateTime Date { get; set; }
         public int TotalFishCaught { get; set; }
         public int WeatherId { get; set; }
         public int LureId { get; set; }
         public int FishId { get; set; }
         public int StrategyId { get; set; }
         public string Location { get; set; }
-        public string Notes { get; set; }
+        public string Content { get; set; }
 
     }
 }

@@ -10,8 +10,8 @@ namespace FishingJournal.Models
     public class EntryListItem
     {
         public int EntryId { get; set; }
-        public string Title { get; set; }
-        [Display(Name ="Created"]
+        public string Content { get; set; }
+        [Display(Name ="Created")]
         public DateTimeOffset CreatedUtc { get; set; }
     }
 }
