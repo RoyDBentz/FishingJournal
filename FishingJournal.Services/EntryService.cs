@@ -44,11 +44,28 @@ namespace FishingJournal.Services
                             e =>
                                 new EntryListItem
                                 {
-                                    EntryId = e.JournalEntryId,
+                                    EntryId = e.EntryId,
                                     Content = e.Content,                                    
                                 }
                                );
                 return query.ToArray();
+            }
+        }
+
+        public EntryDetail GetEntryById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Entries
+                        .Single(e => e.EntryId == id && e.OwnerId == _userId);
+                    return
+                    new EntryDetail
+                    {
+                        EntryId = entity.EntryId,
+                        Content = entity.Content,
+                    };
             }
         }
     }

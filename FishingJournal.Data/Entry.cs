@@ -10,7 +10,7 @@ namespace FishingJournal.Data
     public class Entry
     {
         [Key]
-        public int JournalEntryId { get; set; }
+        public int EntryId { get; set; }
         public Guid OwnerId { get; set; }
         // public DateTime Date { get; set; }
         public int TotalFishCaught { get; set; }
