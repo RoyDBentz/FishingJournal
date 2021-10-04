@@ -48,7 +48,7 @@ namespace FishingJournal.Controllers
         public ActionResult Details(int id)
         {
             var svc = CreateEntryService();
-            var model = svc.GetEntriesById(id);
+            var model = svc.GetEntryById(id);
 
             return View(model);
         }
