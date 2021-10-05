@@ -58,6 +58,14 @@
     <Compile Include="EntryDetail.cs" />
     <Compile Include="EntryEdit.cs" />
     <Compile Include="EntryListItem.cs" />
+    <Compile Include="FishCreate.cs" />
+    <Compile Include="FishDetail.cs" />
+    <Compile Include="FishEdit.cs" />
+    <Compile Include="FishListItem.cs" />
+    <Compile Include="LuresOrBaitCreate.cs" />
+    <Compile Include="LuresOrBaitDetail.cs" />
+    <Compile Include="LuresOrBaitEdit.cs" />
+    <Compile Include="LuresOrBaitListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -33,6 +33,8 @@ namespace FishingJournal.Data
         }
         
         public DbSet<Entry> Entries { get; set; }
+        public DbSet<Fish> Fishes { get; set; }
+        public DbSet<LuresOrBait> LuresOrBaits { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
