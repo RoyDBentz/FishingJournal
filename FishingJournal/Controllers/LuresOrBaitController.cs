@@ -13,5 +13,11 @@ namespace FishingJournal.Controllers
         {
             return View();
         }
+
+        // GET: LuresOrBait
+        public ActionResult Create()
+        {
+            return View();
+        }
     }
 }

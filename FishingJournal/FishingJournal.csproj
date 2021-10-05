@@ -245,11 +245,11 @@
     <Content Include="Views\Entry\Edit.cshtml" />
     <Content Include="Views\Entry\Delete.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\DateTimeOffset.cshtml" />
+    <Content Include="Views\Fish\Create.cshtml" />
+    <Content Include="Views\LuresOrBait\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Fish\" />
-    <Folder Include="Views\LuresOrBait\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
