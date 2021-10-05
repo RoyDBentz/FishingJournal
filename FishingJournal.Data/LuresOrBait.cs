@@ -11,6 +11,7 @@ namespace FishingJournal.Data
     {
         [Key]
         public int LureId { get; set; }
+        public Guid OwnerId { get; set; }        
         public string LureName { get; set; }
         public bool Artificial { get; set; }
         public string ArtificialType { get; set; }

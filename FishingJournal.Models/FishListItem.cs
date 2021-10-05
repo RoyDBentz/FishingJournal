@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FishingJournal.Models
 {
-    class FishListItem
+    public class FishListItem
     {
         public int FishId { get; set; }
         public string Species { get; set; }

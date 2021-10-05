@@ -10,5 +10,6 @@ namespace FishingJournal.Models
     {
         public int FishId { get; set; }
         public string Species { get; set; }
+        public string Content { get; set; }
     }
 }

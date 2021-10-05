@@ -8,6 +8,7 @@ namespace FishingJournal.Controllers
 {
     public class LuresOrBaitController : Controller
     {
+        [Authorize]
         // GET: LuresOrBait
         public ActionResult Index()
         {

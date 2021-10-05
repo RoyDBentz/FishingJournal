@@ -182,6 +182,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\BackGround.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -247,6 +248,8 @@
     <Content Include="Views\Shared\DisplayTemplates\DateTimeOffset.cshtml" />
     <Content Include="Views\Fish\Create.cshtml" />
     <Content Include="Views\LuresOrBait\Create.cshtml" />
+    <Content Include="Views\Fish\Index.cshtml" />
+    <Content Include="Views\LuresOrBait\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

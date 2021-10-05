@@ -10,6 +10,7 @@ namespace FishingJournal.Models
     {
         public int LureId { get; set; }
         public string LureName { get; set; }
+        public string Content { get; set; }
 
     }
 }
