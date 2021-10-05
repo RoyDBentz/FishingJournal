@@ -67,6 +67,26 @@ namespace FishingJournal.Controllers
             return View(model);
         }
 
+        [ActionName("Delete")]
+        public ActionResult Delete(int id)
+        {
+            var svc = CreateEntryService();
+            var model = svc.GetEntryById(id);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteEntry (int id)
+        {
+            var service = CreateEntryService();
+            service.DeleteEntry(id);
+            TempData["SaveResult"] = "Your entry was deleted.";
+            return RedirectToAction("Index");
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, EntryEdit model)

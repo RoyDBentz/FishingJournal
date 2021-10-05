@@ -84,5 +84,20 @@ namespace FishingJournal.Services
                 return ctx.SaveChanges() == 1;
             }
         }
+
+        public bool DeleteEntry(int entryID)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Entries
+                        .Single(e => e.EntryId == entryID && e.OwnerId == _userId);
+
+                ctx.Entries.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }
