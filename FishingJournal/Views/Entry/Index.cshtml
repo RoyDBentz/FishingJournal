@@ -9,6 +9,9 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+<audio autoplay loop>
+    <source src="~/Content/NightFishingNoises.mp3" />
+</audio>
 @if(TempData.ContainsKey("SaveResult"))
 {
 <div class="alert alert-success fade in" role="alert">    
