@@ -254,6 +254,8 @@
     <Content Include="Views\LuresOrBait\Index.cshtml" />
     <Content Include="Views\Fish\Details.cshtml" />
     <Content Include="Views\LuresOrBait\Details.cshtml" />
+    <Content Include="Views\Fish\Edit.cshtml" />
+    <Content Include="Views\LuresOrBait\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
