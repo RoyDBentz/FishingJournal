@@ -9,20 +9,23 @@ using System.Web.Mvc;
 
 namespace FishingJournal.Controllers
 {
+    [Authorize]
     public class LuresOrBaitController : Controller
-    {
-        [Authorize]
+    {        
         // GET: LuresOrBait
         public ActionResult Index()
         {
-            return View();
+            var service = CreateLuresOrBaitService();
+            var lure = service.GetLures();
+
+            return View(lure);
         }
 
-        // GET: LuresOrBait
+        // GET
         public ActionResult Create()
         {
             return View();
-        }
+        } 
 
         [HttpPost]
         [ValidateAntiForgeryToken]

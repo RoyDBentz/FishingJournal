@@ -9,16 +9,19 @@ using System.Web.Mvc;
 
 namespace FishingJournal.Controllers
 {
+    [Authorize]
     public class FishController : Controller
-    {
-        [Authorize]
+    {        
         // GET: Fish
         public ActionResult Index()
         {
-            return View();
+            var service = CreateFishService();
+            var fish = service.GetFishes();
+
+            return View(fish);
         }
 
-        // GET: Fish
+        // GET
         public ActionResult Create()
         {
             return View();
