@@ -1,0 +1,42 @@
+﻿@model FishingJournal.Models.LuresOrBaitDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LuresOrBaitDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LureId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LureId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LureName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LureName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Content)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Content)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LureId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
