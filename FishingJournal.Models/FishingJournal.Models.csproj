@@ -54,23 +54,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EntryCreate.cs" />
-    <Compile Include="EntryDetail.cs" />
-    <Compile Include="EntryEdit.cs" />
-    <Compile Include="EntryListItem.cs" />
-    <Compile Include="FishCreate.cs" />
-    <Compile Include="FishDetail.cs" />
-    <Compile Include="FishEdit.cs" />
-    <Compile Include="FishListItem.cs" />
-    <Compile Include="LuresOrBaitCreate.cs" />
-    <Compile Include="LuresOrBaitDetail.cs" />
-    <Compile Include="LuresOrBaitEdit.cs" />
-    <Compile Include="LuresOrBaitListItem.cs" />
+    <Compile Include="Entry\EntryCreate.cs" />
+    <Compile Include="Entry\EntryDetail.cs" />
+    <Compile Include="Entry\EntryEdit.cs" />
+    <Compile Include="Entry\EntryListItem.cs" />
+    <Compile Include="Fish\FishCreate.cs" />
+    <Compile Include="Fish\FishDetail.cs" />
+    <Compile Include="Fish\FishEdit.cs" />
+    <Compile Include="Fish\FishListItem.cs" />
+    <Compile Include="LuresOrBait\LuresOrBaitCreate.cs" />
+    <Compile Include="LuresOrBait\LuresOrBaitDetail.cs" />
+    <Compile Include="LuresOrBait\LuresOrBaitEdit.cs" />
+    <Compile Include="LuresOrBait\LuresOrBaitListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FishingJournal.Data\FishingJournal.Data.csproj">
+      <Project>{1F64C661-FCB3-4645-B41E-A1572179EE01}</Project>
+      <Name>FishingJournal.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

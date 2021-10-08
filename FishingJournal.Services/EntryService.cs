@@ -22,8 +22,11 @@ namespace FishingJournal.Services
             var entity =
                 new Entry()
                 {
-                    OwnerId = _userId,                    
-                    Content = entry.Content,                    
+                    OwnerId = _userId,                   
+                    Content = entry.Content,
+                    TotalFishCaught = entry.TotalFishCaught,
+                    Location = entry.Location,
+
                 };
             using (var ctx = new ApplicationDbContext())
             {

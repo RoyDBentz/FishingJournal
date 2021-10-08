@@ -9,10 +9,12 @@
 <div class="row">
     <div class="col-md-4">
         <h2>Journal</h2>
-        <p>
-           
-        </p>
-        <p><a href="https://localhost:44334/Entry"> <img src="~/Content/Journal.png" /></a> </p>
+        <script>
+            var boxSound = new Audio();
+            boxSound.src = "D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal\Content\BoxSound.mp3";
+        </script>
+        <a href="#" onclick="boxSound.play()">Testing</a>
+        <a href="https://localhost:44334/Entry" onclick="boxSound.play()"> <img src="~/Content/Journal.png"/></a>
     </div>
     <div class="col-md-4">
         <h2>Tackle Box</h2>        
