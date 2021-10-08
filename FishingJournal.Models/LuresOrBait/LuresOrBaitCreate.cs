@@ -10,7 +10,21 @@ namespace FishingJournal.Models
     public class LuresOrBaitCreate
     {        
         public int LureId { get; set; }
+        public bool Artificial { get; set; }
+
+        [Display(Name = "Lure Name")]
         public string LureName { get; set; }        
-        public string Content { get; set; }
+
+        public string Color { get; set; }        
+
+        public string ArtificialType { get; set; }
+
+        [Display(Name = "Weight in oz")]
+        public double Weight { get; set; }  
+        
+        [Display(Name = "Depth in ft")]
+        public int Depth { get; set; }
+
+
     }
 }

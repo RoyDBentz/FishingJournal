@@ -18,10 +18,10 @@ namespace FishingJournal.Data
         public int TotalFishCaught { get; set; }
         public int WeatherId { get; set; }
 
-        [ForeignKey(nameof(LuresOrBait))]
+       // [ForeignKey(nameof(LuresOrBait))]
         public int LureId { get; set; }
 
-        [ForeignKey(nameof(Fish))]
+        // [ForeignKey(nameof(Fish))]
         public int FishId { get; set; }
 
         public int StrategyId { get; set; }

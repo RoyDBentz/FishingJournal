@@ -20,7 +20,7 @@ namespace FishingJournal.Models
         [MaxLength(8000)]
         public string Content { get; set; }
 
-        [Display(Name ="How many fish were caught")]
+        [Display(Name ="Quantity of fish caught")]
         public int TotalFishCaught { get; set; }
         public int WeatherId { get; set; }
 
@@ -31,7 +31,7 @@ namespace FishingJournal.Models
         public int FishId { get; set; }
 
         // public int StrategyId { get; set; }
-        [Display(Name ="What zip code were you in")]
+        [Display(Name ="Location Zip Code")]
         public string Location { get; set; }        
 
         public virtual ICollection<Fish> Fishes { get; set; } = new List<Fish>();

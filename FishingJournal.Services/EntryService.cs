@@ -48,7 +48,9 @@ namespace FishingJournal.Services
                                 new EntryListItem
                                 {
                                     EntryId = e.EntryId,
-                                    Content = e.Content,                                    
+                                    Content = e.Content,
+                                    TotalFishCaught = e.TotalFishCaught,
+                                    Location= e.Location                                   
                                 }
                                );
                 return query.ToArray();
@@ -68,6 +70,8 @@ namespace FishingJournal.Services
                     {
                         EntryId = entity.EntryId,
                         Content = entity.Content,
+                        TotalFishCaught = entity.TotalFishCaught,
+                        Location = entity.Location,
                     };
             }
         }

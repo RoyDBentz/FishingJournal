@@ -252,7 +252,6 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Entry\Index.cshtml" />
-    <Content Include="Views\Entry\Create.cshtml" />
     <Content Include="Views\Entry\Details.cshtml" />
     <Content Include="Views\Entry\Edit.cshtml" />
     <Content Include="Views\Entry\Delete.cshtml" />
@@ -260,13 +259,14 @@
     <Content Include="Views\Fish\Create.cshtml" />
     <Content Include="Views\LuresOrBait\Create.cshtml" />
     <Content Include="Views\Fish\Index.cshtml" />
-    <Content Include="Views\LuresOrBait\Index.cshtml" />
     <Content Include="Views\Fish\Details.cshtml" />
-    <Content Include="Views\LuresOrBait\Details.cshtml" />
     <Content Include="Views\Fish\Edit.cshtml" />
     <Content Include="Views\LuresOrBait\Edit.cshtml" />
     <Content Include="Views\Fish\Delete.cshtml" />
     <Content Include="Views\LuresOrBait\Delete.cshtml" />
+    <Content Include="Views\Entry\Create.cshtml" />
+    <Content Include="Views\LuresOrBait\Details.cshtml" />
+    <Content Include="Views\LuresOrBait\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

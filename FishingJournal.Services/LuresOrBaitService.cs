@@ -23,7 +23,12 @@ namespace FishingJournal.Services
                 new LuresOrBait()
                 {
                     OwnerId = _userId,
+                    Artificial = bait.Artificial,
                     LureName = bait.LureName,
+                    Color = bait.Color,
+                    ArtificialType = bait.ArtificialType,
+                    Weight = bait.Weight,
+                    Depth = bait.Depth,
                 };
             using (var ctx = new ApplicationDbContext())
             {
@@ -43,9 +48,13 @@ namespace FishingJournal.Services
                         .Select(
                             e =>
                                 new LuresOrBaitListItem
-                                {
-                                    LureId = e.LureId,
+                                {                                    
+                                    Artificial = e.Artificial,
                                     LureName = e.LureName,
+                                    Color = e.Color,
+                                    ArtificialType = e.ArtificialType,
+                                    Weight = e.Weight,
+                                    Depth = e.Depth,
                                 }
                                );
                 return query.ToArray();
@@ -64,7 +73,12 @@ namespace FishingJournal.Services
                 new LuresOrBaitDetail
                 {
                     LureId = entity.LureId,
+                    Artificial = entity.Artificial,
                     LureName = entity.LureName,
+                    Color = entity.Color,
+                    ArtificialType = entity.ArtificialType,
+                    Weight = entity.Weight,
+                    Depth = entity.Depth,
                 };
             }
         }
