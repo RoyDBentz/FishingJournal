@@ -198,6 +198,7 @@
     <Content Include="Content\Journal.png" />
     <Content Include="Content\NetBackground.jpg" />
     <Content Include="Content\NightFishingNoises.mp3" />
+    <Content Include="Content\TackeBoxBackground.jpg" />
     <Content Include="Content\TackleBox.jpg" />
     <Content Include="Content\TackleBox2.png" />
     <Content Include="favicon.ico" />
