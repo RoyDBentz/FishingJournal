@@ -38,7 +38,7 @@ namespace FishingJournal.Controllers
             model.Species = new SelectList(fish, "FishId", "Species");
 
             var lures = _db.LuresOrBaits.ToList();
-            model.Lures = new SelectList(lures, "LureId", "Name");
+            model.Lures = new SelectList(lures, "LureId", "LureName");
 
             return View(model);
         }
