@@ -9,18 +9,6 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<audio autoplay loop>
-    <source src="~/Content/NightFishingNoises.mp3" />
-</audio>
-@if(TempData.ContainsKey("SaveResult"))
-{
-<div class="alert alert-success fade in" role="alert">    
-     <button type="button" class="close" data-dismiss="alert">
-         <span>&times;</span>
-     </button>
-    @TempData["SaveResult"]
-</div>
-}
 <table class="table">
     <tr>
         <th>
@@ -32,27 +20,38 @@
         <th>
             @Html.DisplayNameFor(model => model.CreatedUtc)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalFishCaught)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
         <th></th>
     </tr>
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.EntryId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Content)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedUtc)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.EntryId }) |
-                @Html.ActionLink("Details", "Details", new { id = item.EntryId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.EntryId })
-            </td>
-        </tr>
-    }
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntryId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Content)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedUtc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalFishCaught)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EntryId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.EntryId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.EntryId })
+        </td>
+    </tr>
+}
 
 </table>

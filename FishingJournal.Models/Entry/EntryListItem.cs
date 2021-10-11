@@ -13,8 +13,17 @@ namespace FishingJournal.Models
         public string Content { get; set; }
         [Display(Name ="Created")]
         public DateTimeOffset CreatedUtc { get; set; }
+
+        [Display(Name = "Fish Caught")]
         public int TotalFishCaught { get; set; }
+
         public string Location { get; set; }
+
+        [Display(Name = "Species")]
+        public string Species { get; set; }
+
+        [Display(Name = "Lure")]
+        public string LureName { get; set; }
 
     }
 }

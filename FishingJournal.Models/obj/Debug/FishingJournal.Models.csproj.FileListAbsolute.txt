@@ -17,3 +17,16 @@ D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\obj\D
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\FishingJournal.Data.dll
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\FishingJournal.Data.pdb
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\FishingJournal.Data.dll.config
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\System.Web.Helpers.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\System.Web.Mvc.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\System.Web.Razor.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\System.Web.WebPages.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\System.Web.WebPages.Razor.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\System.Web.Helpers.xml
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\System.Web.Mvc.xml
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\System.Web.Razor.xml
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\System.Web.WebPages.xml
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Models\bin\Debug\System.Web.WebPages.Razor.xml

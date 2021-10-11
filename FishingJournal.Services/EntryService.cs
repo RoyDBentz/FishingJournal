@@ -10,7 +10,7 @@ namespace FishingJournal.Services
 {
     public class EntryService
     {
-        private readonly Guid _userId;
+        private readonly Guid _userId;        
 
         public EntryService(Guid userId)
         {
@@ -26,6 +26,7 @@ namespace FishingJournal.Services
                     Content = entry.Content,
                     TotalFishCaught = entry.TotalFishCaught,
                     Location = entry.Location,
+                    
 
                 };
             using (var ctx = new ApplicationDbContext())

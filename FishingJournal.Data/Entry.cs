@@ -12,24 +12,19 @@ namespace FishingJournal.Data
     {
         [Key]
         public int EntryId { get; set; }
-        public Guid OwnerId { get; set; }
-       
+        public Guid OwnerId { get; set; }       
         public DateTimeOffset? ModifiedUtc { get; set; }
-        public int TotalFishCaught { get; set; }
-        public int WeatherId { get; set; }
-
-       // [ForeignKey(nameof(LuresOrBait))]
-        public int LureId { get; set; }
-
-        // [ForeignKey(nameof(Fish))]
-        public int FishId { get; set; }
-
-        public int StrategyId { get; set; }
+        public int TotalFishCaught { get; set; }        
         public string Location { get; set; }
         public string Content { get; set; }
 
-        public virtual ICollection<Fish> Fishes { get; set; } = new List<Fish>();
-        public virtual ICollection<LuresOrBait> Lures { get; set; } = new List<LuresOrBait>();
+        public int FishId { get; set; }
+        public virtual Fish Fish { get; set; }
+        
+        public int LureId { get; set; }
+        public virtual LuresOrBait LuresOrBait { get; set; }
+
+        
         
     }
 }

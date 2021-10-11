@@ -1,4 +1,5 @@
-﻿using FishingJournal.Models;
+﻿using FishingJournal.Data;
+using FishingJournal.Models;
 using FishingJournal.Services;
 using Microsoft.AspNet.Identity;
 using System;
@@ -12,27 +13,50 @@ namespace FishingJournal.Controllers
     [Authorize]
     public class EntryController : Controller
     {
+        private readonly ApplicationDbContext _db = new ApplicationDbContext();
         // GET: Entry
         public ActionResult Index()
         {
+            List<EntryListItem> entries = _db.Entries.Select(e => new EntryListItem()
+            {
+                Species = e.Fish.Species,
+                LureName = e.LuresOrBait.LureName
+            }).ToList();
+
             var service = CreateEntryService();
             var model = service.GetEntries();
-
-            return View(model);
+            
+            return View(entries);
         }
 
         // GET
         public ActionResult Create()
         {
-            return View();
+            EntryCreate model = new EntryCreate();
+
+            var fish = _db.Fishes.ToList();
+            model.Species = new SelectList(fish, "FishId", "Species");
+
+            var lures = _db.LuresOrBaits.ToList();
+            model.Lures = new SelectList(lures, "LureId", "Name");
+
+            return View(model);
         }
 
+        // POST: Entry
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(EntryCreate model)
         {
-            if (!ModelState.IsValid) return View(model);
-
+            if (ModelState.IsValid)
+            {
+                Entry entry = new Entry()
+                {
+                    FishId = model.FishId,
+                    LureId = model.LureId
+                };
+                return View(entry);
+            }
             var service = CreateEntryService();
 
             if (service.CreateEntry(model))

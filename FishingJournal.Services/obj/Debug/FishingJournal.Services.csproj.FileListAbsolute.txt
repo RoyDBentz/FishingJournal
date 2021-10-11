@@ -20,3 +20,14 @@ D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\obj
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\obj\Debug\FishingJournal.Services.csproj.CopyComplete
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\obj\Debug\FishingJournal.Services.dll
 D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\obj\Debug\FishingJournal.Services.pdb
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\System.Web.Mvc.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\System.Web.WebPages.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\System.Web.WebPages.Razor.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\System.Web.Razor.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\System.Web.Mvc.xml
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\System.Web.WebPages.xml
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\System.Web.WebPages.Razor.xml
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\System.Web.Razor.xml
+D:\ElevenFiftyProjects\FishingJournal\FishingJournal\FishingJournal.Services\bin\Debug\System.Web.WebPages.Deployment.xml
