@@ -22,12 +22,13 @@ namespace FishingJournal.Services
             var entity =
                 new Entry()
                 {
-                    OwnerId = _userId,                   
+                    OwnerId = _userId, 
+                    EntryId = entry.EntryId,
+                    FishId = entry.FishId,
+                    LureId = entry.LureId,
                     Content = entry.Content,
                     TotalFishCaught = entry.TotalFishCaught,
-                    Location = entry.Location,
-                    
-
+                    Location = entry.Location, 
                 };
             using (var ctx = new ApplicationDbContext())
             {

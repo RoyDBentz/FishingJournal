@@ -26,7 +26,7 @@ namespace FishingJournal.Controllers
             var service = CreateEntryService();
             var model = service.GetEntries();
             
-            return View(entries);
+            return View(model);
         }
 
         // GET
@@ -57,8 +57,7 @@ namespace FishingJournal.Controllers
                 };
                 _db.Entries.Add(entry);
                 _db.SaveChanges();
-                return RedirectToAction("Index");
-                //return View(model);
+                // return RedirectToAction("Index");                
             }
             var service = CreateEntryService();
 

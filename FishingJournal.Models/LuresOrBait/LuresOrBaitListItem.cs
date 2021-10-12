@@ -9,7 +9,7 @@ namespace FishingJournal.Models
 {
     public class LuresOrBaitListItem
     {        
-
+        public int LureId { get; set; }
         public bool Artificial { get; set; }
 
         [Display(Name = "Lure Name")]

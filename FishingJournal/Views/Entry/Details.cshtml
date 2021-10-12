@@ -1,7 +1,7 @@
 ﻿@model FishingJournal.Models.EntryDetail
 
 @{
-    ViewBag.Title = "Journal Entry Details";
+    ViewBag.Title = "Details";
 }
 
 <h2>Details</h2>
@@ -10,7 +10,10 @@
     <h4>EntryDetail</h4>
     <hr />
     <dl class="dl-horizontal">
-        
+        <dt>
+            @Html.DisplayNameFor(model => model.EntryId)
+        </dt>
+
         <dd>
             @Html.DisplayFor(model => model.EntryId)
         </dd>
@@ -21,6 +24,22 @@
 
         <dd>
             @Html.DisplayFor(model => model.Content)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalFishCaught)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalFishCaught)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
         </dd>
 
     </dl>

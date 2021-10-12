@@ -1,20 +1,28 @@
-﻿@model FishingJournal.Data.LuresOrBait
+﻿@model FishingJournal.Models.LuresOrBaitCreate
 
 @{
     ViewBag.Title = "Create";
 }
 
-<h2>Add new lure to tackle box</h2>
+<h2>Create</h2>
 
 
 @using (Html.BeginForm()) 
-{ 
+{
     @Html.AntiForgeryToken()
-<div style="font-size:x-large;" >
+    
     <div class="form-horizontal">
-        <h4>Lures Or Baits</h4>
+        <h4>LuresOrBaitCreate</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.LureId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LureId, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.LureId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
         <div class="form-group">
             @Html.LabelFor(model => model.Artificial, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -22,6 +30,22 @@
                     @Html.EditorFor(model => model.Artificial)
                     @Html.ValidationMessageFor(model => model.Artificial, "", new { @class = "text-danger" })
                 </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LureName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LureName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.LureName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Color, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Color, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Color, "", new { @class = "text-danger" })
             </div>
         </div>
 
@@ -42,14 +66,6 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Color, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Color, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Color, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
             @Html.LabelFor(model => model.Depth, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Depth, new { htmlAttributes = new { @class = "form-control" } })
@@ -63,7 +79,6 @@
             </div>
         </div>
     </div>
-</div>
 }
 
 <div>
