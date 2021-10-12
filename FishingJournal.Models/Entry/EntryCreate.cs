@@ -21,9 +21,10 @@ namespace FishingJournal.Models
         public int TotalFishCaught { get; set; }
         
         [Display(Name ="Location Zip Code")]
-        public string Location { get; set; } 
-
+        public string Location { get; set; }
+        [Display(Name = "Species")]
         public int FishId { get; set; }
+        [Display(Name = "Lures")]
         public int LureId { get; set; }
         public SelectList Species { get; set; }
         public SelectList Lures { get; set; }

@@ -1,19 +1,16 @@
 ﻿@model IEnumerable<FishingJournal.Models.EntryListItem>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Journal Entries";
 }
 
-<h2>Index</h2>
+<h2>Journal Entries</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.EntryId)
-        </th>
+    <tr>        
         <th>
             @Html.DisplayNameFor(model => model.Content)
         </th>
