@@ -78,8 +78,7 @@ namespace FishingJournal.Services
                         .Fishes
                         .Single(e => e.FishId == model.FishId && e.OwnerId == _userId);
 
-                entity.Species = model.Species;
-                //entity.ModifiedUtc = DateTimeOffset.UtcNow;
+                entity.Species = model.Species;                
 
                 return ctx.SaveChanges() == 1;
             }

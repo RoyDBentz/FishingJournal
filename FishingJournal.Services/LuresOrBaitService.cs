@@ -22,7 +22,7 @@ namespace FishingJournal.Services
             var entity =
                 new LuresOrBait()
                 {
-                    OwnerId = _userId,
+                    OwnerId = _userId,                    
                     Artificial = bait.Artificial,
                     LureName = bait.LureName,
                     Color = bait.Color,
@@ -48,7 +48,8 @@ namespace FishingJournal.Services
                         .Select(
                             e =>
                                 new LuresOrBaitListItem
-                                {                                    
+                                { 
+                                    LureId = e.LureId,
                                     Artificial = e.Artificial,
                                     LureName = e.LureName,
                                     Color = e.Color,

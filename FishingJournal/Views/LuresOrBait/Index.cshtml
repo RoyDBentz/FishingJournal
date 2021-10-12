@@ -12,6 +12,9 @@
 <table class="table">
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.LureId)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Artificial)
         </th>
         <th>
@@ -35,6 +38,9 @@
 @foreach (var item in Model) {
     <tr>
         <td>
+            @Html.DisplayFor(modelItem => item.LureId)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.Artificial)
         </td>
         <td>
@@ -53,9 +59,9 @@
             @Html.DisplayFor(modelItem => item.Depth)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            @Html.ActionLink("Edit", "Edit", new { id=item.LureId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LureId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LureId })
         </td>
     </tr>
 }
