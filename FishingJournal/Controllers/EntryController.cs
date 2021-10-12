@@ -55,7 +55,10 @@ namespace FishingJournal.Controllers
                     FishId = model.FishId,
                     LureId = model.LureId
                 };
-                return View(entry);
+                _db.Entries.Add(entry);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+                //return View(model);
             }
             var service = CreateEntryService();
 
