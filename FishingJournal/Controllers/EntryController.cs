@@ -57,7 +57,7 @@ namespace FishingJournal.Controllers
                 };
                 _db.Entries.Add(entry);
                 _db.SaveChanges();
-                // return RedirectToAction("Index");                
+                               
             }
             var service = CreateEntryService();
 
