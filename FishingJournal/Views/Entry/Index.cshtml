@@ -1,27 +1,30 @@
 ﻿@model IEnumerable<FishingJournal.Models.EntryListItem>
 
 @{
-    ViewBag.Title = "Journal Entries";
+    ViewBag.Title = "Index";
 }
 
-<h2>Journal Entries</h2>
+<h2>Index</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
-    <tr>        
+    <tr>       
         <th>
-            @Html.DisplayNameFor(model => model.Content)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CreatedUtc)
+            @Html.DisplayNameFor(model => model.Notes)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.TotalFishCaught)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Species)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LureName)
         </th>
         <th></th>
     </tr>
@@ -32,16 +35,19 @@
             @Html.DisplayFor(modelItem => item.EntryId)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Content)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CreatedUtc)
+            @Html.DisplayFor(modelItem => item.Notes)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.TotalFishCaught)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Species)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LureName)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.EntryId }) |

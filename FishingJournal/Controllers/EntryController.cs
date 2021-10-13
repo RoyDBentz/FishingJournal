@@ -87,7 +87,7 @@ namespace FishingJournal.Controllers
                     new EntryEdit
                     {
                         EntryId = detail.EntryId,
-                        Content = detail.Content
+                        Notes = detail.Notes
                     };
 
             return View(model);

@@ -26,7 +26,7 @@ namespace FishingJournal.Services
                     EntryId = entry.EntryId,
                     FishId = entry.FishId,
                     LureId = entry.LureId,
-                    Content = entry.Content,
+                    Notes = entry.Notes,
                     TotalFishCaught = entry.TotalFishCaught,
                     Location = entry.Location, 
                 };
@@ -50,7 +50,7 @@ namespace FishingJournal.Services
                                 new EntryListItem
                                 {
                                     EntryId = e.EntryId,
-                                    Content = e.Content,
+                                    Notes = e.Notes,
                                     TotalFishCaught = e.TotalFishCaught,
                                     Location= e.Location                                   
                                 }
@@ -71,7 +71,7 @@ namespace FishingJournal.Services
                     new EntryDetail
                     {
                         EntryId = entity.EntryId,
-                        Content = entity.Content,
+                        Notes = entity.Notes,
                         TotalFishCaught = entity.TotalFishCaught,
                         Location = entity.Location,
                     };
@@ -87,7 +87,7 @@ namespace FishingJournal.Services
                         .Entries
                         .Single(e => e.EntryId == model.EntryId && e.OwnerId == _userId);
 
-                entity.Content = model.Content;
+                entity.Notes = model.Notes;
                 entity.ModifiedUtc = DateTimeOffset.UtcNow;
 
                 return ctx.SaveChanges() == 1;

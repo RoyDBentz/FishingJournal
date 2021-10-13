@@ -15,7 +15,7 @@ namespace FishingJournal.Models
         public int EntryId { get; set; }
 
         [MaxLength(8000)]
-        public string Content { get; set; }
+        public string Notes { get; set; }
 
         [Display(Name ="Fish Caught")]
         public int TotalFishCaught { get; set; }

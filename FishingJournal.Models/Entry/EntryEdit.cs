@@ -9,7 +9,7 @@ namespace FishingJournal.Models
     public class EntryEdit
     {
         public int EntryId { get; set; }
-        public string Content { get; set; }
+        public string Notes { get; set; }
 
     }
 }

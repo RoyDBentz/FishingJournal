@@ -16,7 +16,7 @@ namespace FishingJournal.Data
         public DateTimeOffset? ModifiedUtc { get; set; }
         public int TotalFishCaught { get; set; }        
         public string Location { get; set; }
-        public string Content { get; set; }
+        public string Notes { get; set; }
 
         public int FishId { get; set; }
         public virtual Fish Fish { get; set; }
