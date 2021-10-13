@@ -9,6 +9,7 @@ namespace FishingJournal.Models
     public class EntryEdit
     {
         public int EntryId { get; set; }
+        public DateTimeOffset JournalDate { get; set; }
         public string Notes { get; set; }
 
     }

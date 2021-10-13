@@ -12,8 +12,11 @@ namespace FishingJournal.Models
       
         public int EntryId { get; set; }
         public string Notes { get; set; }
+        public DateTimeOffset JournalDate { get; set; }
+
         [Range(0, 999, ErrorMessage = "Cannot be negative")]
         public int TotalFishCaught { get; set; }
+
         [Display(Name ="Zip Code")]
         [MinLength(5, ErrorMessage = "Must be 5 digits")]
         [MaxLength(5, ErrorMessage = "Must be 5 digits")]

@@ -87,6 +87,7 @@ namespace FishingJournal.Controllers
                     new EntryEdit
                     {
                         EntryId = detail.EntryId,
+                        JournalDate = detail.JournalDate,
                         Notes = detail.Notes
                     };
 

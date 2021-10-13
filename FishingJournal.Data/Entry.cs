@@ -12,7 +12,8 @@ namespace FishingJournal.Data
     {
         [Key]
         public int EntryId { get; set; }
-        public Guid OwnerId { get; set; }       
+        public Guid OwnerId { get; set; }
+        public DateTimeOffset JournalDate { get; set; }
         public DateTimeOffset? ModifiedUtc { get; set; }
         public int TotalFishCaught { get; set; }        
         public string Location { get; set; }

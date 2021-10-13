@@ -26,6 +26,7 @@ namespace FishingJournal.Services
                     EntryId = entry.EntryId,
                     FishId = entry.FishId,
                     LureId = entry.LureId,
+                    JournalDate = entry.JournalDate,
                     Notes = entry.Notes,
                     TotalFishCaught = entry.TotalFishCaught,
                     Location = entry.Location, 
@@ -50,6 +51,7 @@ namespace FishingJournal.Services
                                 new EntryListItem
                                 {
                                     EntryId = e.EntryId,
+                                    JournalDate = e.JournalDate,
                                     Notes = e.Notes,
                                     TotalFishCaught = e.TotalFishCaught,
                                     Location= e.Location                                   
@@ -71,6 +73,7 @@ namespace FishingJournal.Services
                     new EntryDetail
                     {
                         EntryId = entity.EntryId,
+                        JournalDate = entity.JournalDate,
                         Notes = entity.Notes,
                         TotalFishCaught = entity.TotalFishCaught,
                         Location = entity.Location,

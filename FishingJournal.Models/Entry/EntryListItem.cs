@@ -10,6 +10,7 @@ namespace FishingJournal.Models
     public class EntryListItem
     {
         public int EntryId { get; set; }
+        public DateTimeOffset JournalDate { get; set; }
         public string Notes { get; set; }        
 
         [Display(Name = "Fish Caught")]

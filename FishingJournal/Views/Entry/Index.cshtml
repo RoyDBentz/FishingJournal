@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<FishingJournal.Models.EntryListItem>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Journal Entries";
 }
 
-<h2>Index</h2>
+<h2>Journal Entries</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -31,9 +31,7 @@
 
 @foreach (var item in Model) {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.EntryId)
-        </td>
+        
         <td>
             @Html.DisplayFor(modelItem => item.Notes)
         </td>

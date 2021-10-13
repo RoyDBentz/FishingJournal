@@ -14,6 +14,10 @@ namespace FishingJournal.Models
     {      
         public int EntryId { get; set; }
 
+        [Display(Name = "Date of trip")]
+        [DataType(DataType.Date)]
+        public DateTimeOffset JournalDate { get; set; }
+
         [MaxLength(8000)]
         public string Notes { get; set; }
 
