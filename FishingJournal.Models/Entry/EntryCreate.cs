@@ -18,12 +18,18 @@ namespace FishingJournal.Models
         public string Notes { get; set; }
 
         [Display(Name ="Fish Caught")]
+        [Range(0, 999, ErrorMessage ="Cannot be 0 or less")]
         public int TotalFishCaught { get; set; }
-        
-        [Display(Name ="Location Zip Code")]
+
+        [Display(Name = "Zip Code")]
+        //[Range(10001, 99999, ErrorMessage = "Must be 5 digits")]  
+        [MinLength(5, ErrorMessage ="Must be 5 digits")]
+        [MaxLength(5, ErrorMessage ="Must be 5 digits")]
         public string Location { get; set; }
+
         [Display(Name = "Species")]
         public int FishId { get; set; }
+
         [Display(Name = "Lures")]
         public int LureId { get; set; }
         public SelectList Species { get; set; }

@@ -13,8 +13,12 @@ namespace FishingJournal.Models
         public string Notes { get; set; }        
 
         [Display(Name = "Fish Caught")]
+        [Range(0, 999, ErrorMessage = "Cannot be 0 or less")]
         public int TotalFishCaught { get; set; }
 
+        [Display(Name = "Zip Code")]
+        [MinLength(5, ErrorMessage = "Must be 5 digits")]
+        [MaxLength(5, ErrorMessage = "Must be 5 digits")]
         public string Location { get; set; }
 
         [Display(Name = "Species")]

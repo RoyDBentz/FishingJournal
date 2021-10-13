@@ -3,6 +3,7 @@ using FishingJournal.Services;
 using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -44,6 +45,28 @@ namespace FishingJournal.Controllers
 
             return View(fish);
         }
+
+        /* [HttpPost]
+        public ActionResult UploadFiles(HttpPostedFileBase file)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    if (file != null)
+                    {
+                        string path = Path.Combine(Server.MapPath("/UploadFiles"), Path.GetFileName(file.FileName));
+                        file.SaveAs(path);
+                    }
+                    ViewBag.FileStatus = "File uploaded successfully.";
+                }
+                catch (Exception)
+                {
+                    ViewBag.FileStatus = "Error while file uploading."; ;
+                }
+            }
+            return View("Index");
+        } */
 
         public ActionResult Details(int id)
         {
