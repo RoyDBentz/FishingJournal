@@ -12,6 +12,8 @@ namespace FishingJournal.Models
       
         public int EntryId { get; set; }
         public string Notes { get; set; }
+
+        [Display(Name = "Date of trip")]
         public DateTimeOffset JournalDate { get; set; }
 
         [Display(Name ="Total fish caught")]

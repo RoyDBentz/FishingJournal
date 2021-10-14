@@ -196,7 +196,6 @@
     <Content Include="Content\FishingPoleIcon.png" />
     <Content Include="Content\FishingPoleIcon2.png" />
     <Content Include="Content\Journal.png" />
-    <Content Include="Content\NetBackground.jpg" />
     <Content Include="Content\NightFishingNoises.mp3" />
     <Content Include="Content\NoteBookBackground.jpg" />
     <Content Include="Content\TackeBoxBackground.jpg" />

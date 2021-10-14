@@ -10,6 +10,8 @@ namespace FishingJournal.Models
     public class EntryListItem
     {
         public int EntryId { get; set; }
+
+        [Display(Name = "Date of trip")]
         public DateTimeOffset JournalDate { get; set; }
         public string Notes { get; set; }        
 
