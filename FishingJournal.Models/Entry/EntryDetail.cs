@@ -14,6 +14,7 @@ namespace FishingJournal.Models
         public string Notes { get; set; }
         public DateTimeOffset JournalDate { get; set; }
 
+        [Display(Name ="Total fish caught")]
         [Range(0, 999, ErrorMessage = "Cannot be negative")]
         public int TotalFishCaught { get; set; }
 
