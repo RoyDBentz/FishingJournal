@@ -1,7 +1,9 @@
-﻿body {
-    padding-top: 50px;
+﻿body {    
+    padding-top: 250px;
     padding-bottom: 20px;
-    background-image: url(/Content/BackGround.jpg) !important;
+    background-image: url(BackGround.jpg) !important;
+    background-size: cover;
+    border: none !important; 
     cursor: url(FishingPoleIcon2.png), default !important;
 }
 
