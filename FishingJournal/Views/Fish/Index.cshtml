@@ -4,18 +4,24 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Live Well</h2>
+<h2>All Fish Species</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table" style="font-size:xx-large">
+<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.FishId)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Species)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AverageSize)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AverageWeight)
         </th>
         <th></th>
     </tr>
@@ -29,9 +35,15 @@
             @Html.DisplayFor(modelItem => item.Species)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.AverageSize)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AverageWeight)
+        </td>
+        <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.FishId }) |
             @Html.ActionLink("Details", "Details", new { id = item.FishId }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.FishId  })
+            @Html.ActionLink("Delete", "Delete", new { id = item.FishId })
         </td>
     </tr>
 }

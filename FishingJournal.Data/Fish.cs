@@ -13,8 +13,8 @@ namespace FishingJournal.Data
         public int FishId { get; set; }
         public Guid OwnerId { get; set; }
         public string Species { get; set; }
-        public double Length { get; set; }
-        public double Weight { get; set; }
-        
+        public double AverageSize { get; set; }
+        public double AverageWeight { get; set; }
+
     }
 }

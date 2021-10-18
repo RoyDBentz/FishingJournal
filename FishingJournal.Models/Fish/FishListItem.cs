@@ -9,8 +9,12 @@ namespace FishingJournal.Models
 {
     public class FishListItem
     {
-        [Display(Name ="Live Well")]
+        [Display(Name = "Live Well")]
         public int FishId { get; set; }
         public string Species { get; set; }
+        [Display(Name = "Avg Length in inches")]
+        public double AverageSize { get; set; }
+        [Display(Name = "Avg Weight in lbs")]
+        public double AverageWeight { get; set; }
     }
 }

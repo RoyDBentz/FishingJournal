@@ -44,29 +44,7 @@ namespace FishingJournal.Controllers
             ModelState.AddModelError("", "Entry could not be created");
 
             return View(fish);
-        }
-
-        /* [HttpPost]
-        public ActionResult UploadFiles(HttpPostedFileBase file)
-        {
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    if (file != null)
-                    {
-                        string path = Path.Combine(Server.MapPath("/UploadFiles"), Path.GetFileName(file.FileName));
-                        file.SaveAs(path);
-                    }
-                    ViewBag.FileStatus = "File uploaded successfully.";
-                }
-                catch (Exception)
-                {
-                    ViewBag.FileStatus = "Error while file uploading."; ;
-                }
-            }
-            return View("Index");
-        } */
+        }       
 
         public ActionResult Details(int id)
         {
@@ -82,9 +60,10 @@ namespace FishingJournal.Controllers
             var detail = service.GetFishById(id);
             var fish =
                     new FishEdit
-                    {
-                        FishId = detail.FishId,
-                        Species = detail.Species
+                    {FishId = detail.FishId,
+                        Species = detail.Species,
+                        AverageSize = detail.AverageSize,
+                        AverageWeight = detail.AverageWeight,
                     };
 
             return View(fish);

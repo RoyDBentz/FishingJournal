@@ -4,10 +4,10 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Species</h2>
 
 <div>
-    <h4>FishDetail</h4>
+    <h4>Species Details</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -26,9 +26,25 @@
             @Html.DisplayFor(model => model.Species)
         </dd>
 
+        <dt>
+            @Html.DisplayNameFor(model => model.AverageSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AverageSize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AverageWeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AverageWeight)
+        </dd>
+
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.FishId }) |
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

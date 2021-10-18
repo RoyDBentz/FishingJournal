@@ -24,6 +24,8 @@ namespace FishingJournal.Services
                 {
                     OwnerId = _userId,
                     Species = fish.Species,
+                    AverageSize = fish.AverageSize,
+                    AverageWeight = fish.AverageWeight,
                 };
             using (var ctx = new ApplicationDbContext())
             {
@@ -46,6 +48,8 @@ namespace FishingJournal.Services
                                 {
                                     FishId = e.FishId,
                                     Species = e.Species,
+                                    AverageSize = e.AverageSize,
+                                    AverageWeight = e.AverageWeight,
                                 }
                                );
                 return query.ToArray();
@@ -65,6 +69,8 @@ namespace FishingJournal.Services
                 {
                     FishId = entity.FishId,
                     Species = entity.Species,
+                    AverageSize = entity.AverageSize,
+                    AverageWeight = entity.AverageWeight
                 };
             }
         }
@@ -78,7 +84,9 @@ namespace FishingJournal.Services
                         .Fishes
                         .Single(e => e.FishId == model.FishId && e.OwnerId == _userId);
 
-                entity.Species = model.Species;                
+                entity.Species = model.Species;
+                entity.AverageSize = model.AverageSize;
+                entity.AverageWeight = model.AverageWeight;
 
                 return ctx.SaveChanges() == 1;
             }
