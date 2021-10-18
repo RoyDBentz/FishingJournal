@@ -193,6 +193,7 @@
     <Content Include="Content\BoxSound.ogg" />
     <Content Include="Content\Fish.png" />
     <Content Include="Content\Fishing.jpg" />
+    <Content Include="Content\FishingLogo.png" />
     <Content Include="Content\FishingPoleIcon.png" />
     <Content Include="Content\FishingPoleIcon2.png" />
     <Content Include="Content\Journal.png" />
