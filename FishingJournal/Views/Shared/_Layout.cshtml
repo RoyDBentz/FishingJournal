@@ -22,7 +22,7 @@
             </div>
 
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" >
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     @if (User.Identity.IsAuthenticated)
                     {
@@ -40,10 +40,7 @@
     </div>
         <div class="container body-content">
             @RenderBody()
-            <hr />
-            <footer>
-                <p>&copy; @DateTime.Now.Year - Fishing Journal</p>
-            </footer>
+            
         </div>
 
         @Scripts.Render("~/bundles/jquery")
