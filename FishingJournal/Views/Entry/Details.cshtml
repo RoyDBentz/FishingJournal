@@ -3,40 +3,40 @@
 @{
     ViewBag.Title = "Details";
 }
+<div style="margin-top:-100px">
+    <h2>Trip Details</h2>
 
-<h2>Trip Details</h2>
+    <div>
+        <h4></h4>
+        <dl class="dl-horizontal" style="font-size:x-large">
+            <dt>
+                @Html.DisplayNameFor(model => model.Notes)
+            </dt>
 
-<div>
-    <h4></h4>
-    <hr />
-    <dl class="dl-horizontal">        
-        <dt>
-            @Html.DisplayNameFor(model => model.Notes)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Notes)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Notes)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.TotalFishCaught)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TotalFishCaught)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.TotalFishCaught)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.TotalFishCaught)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Location)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Location)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Location)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Location)
-        </dd>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.EntryId }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.EntryId }) |
+        @Html.ActionLink("Back to trips", "Index")
+    </p>
+    </div>

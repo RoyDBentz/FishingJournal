@@ -7,9 +7,9 @@
 <h2>Species</h2>
 
 <div>
-    <h4>Species Details</h4>
-    <hr />
-    <dl class="dl-horizontal">
+    <h4>Details</h4>
+    
+    <dl class="dl-horizontal" style="font-size:x-large">
         <dt>
             @Html.DisplayNameFor(model => model.FishId)
         </dt>
@@ -45,6 +45,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FishId }) |
+    @Html.ActionLink("Back to Species", "Index")
 </p>

@@ -183,6 +183,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\BackGround.jpg" />
+    <Content Include="Content\BackGround2.jpg" />
     <Content Include="Content\BackGroundTwo.jpg" />
     <Content Include="Content\Bass.png" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -194,6 +195,7 @@
     <Content Include="Content\Fish.png" />
     <Content Include="Content\Fishing.jpg" />
     <Content Include="Content\FishingLogo.png" />
+    <Content Include="Content\FishingLogo2.png" />
     <Content Include="Content\FishingPoleIcon.png" />
     <Content Include="Content\FishingPoleIcon2.png" />
     <Content Include="Content\Journal.png" />

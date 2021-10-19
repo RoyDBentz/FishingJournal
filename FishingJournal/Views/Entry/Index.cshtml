@@ -4,47 +4,49 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Fishing Journal</h2>
+<div style="margin-top:-100px">
+    <h2>Fishing Journal</h2>
 
-<p>
-    @Html.ActionLink("Add trip", "Create")
-</p>
+    <p>
+        @Html.ActionLink("Add trip", "Create")
+    </p>
 
-<audio autoplay loop>
-    <source src="~/Content/NightFishingNoises.mp3" />
-</audio>
+    <audio autoplay loop>
+        <source src="~/Content/NightFishingNoises.mp3" />
+    </audio>
 
-<table class="table" style="text-align:center; font-size:large">
-    <tr>
-        <th style="text-align:center; border:none">
-            @Html.DisplayNameFor(model => model.JournalDate)
-        </th>
-        <th style="text-align: center; border: none">
-            @Html.DisplayNameFor(model => model.TotalFishCaught)
-        </th>
-        <th style="text-align: center; border: none">
-            @Html.DisplayNameFor(model => model.Location)
-        </th>        
-    </tr>
-
-    @foreach (var item in Model)
-    {
+    <table class="table" style="text-align:center; font-size:large">
         <tr>
-            <td style="border:none">
-                @Html.DisplayFor(modelItem => item.JournalDate)
-            </td>
-            <td style="border:none">
-                @Html.DisplayFor(modelItem => item.TotalFishCaught)
-            </td>
-            <td style="border:none">
-                @Html.DisplayFor(modelItem => item.Location)
-            </td>
-            <td style="border:none">
-                @Html.ActionLink("Edit", "Edit", new { id = item.EntryId }) |
-                @Html.ActionLink("Details", "Details", new { id = item.EntryId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.EntryId })
-            </td>
+            <th style="text-align:center; border:none">
+                @Html.DisplayNameFor(model => model.JournalDate)
+            </th>
+            <th style="text-align: center; border: none">
+                @Html.DisplayNameFor(model => model.TotalFishCaught)
+            </th>
+            <th style="text-align: center; border: none">
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
         </tr>
-    }
 
-</table>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td style="border:none">
+                    @Html.DisplayFor(modelItem => item.JournalDate)
+                </td>
+                <td style="border:none">
+                    @Html.DisplayFor(modelItem => item.TotalFishCaught)
+                </td>
+                <td style="border:none">
+                    @Html.DisplayFor(modelItem => item.Location)
+                </td>
+                <td style="border:none">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.EntryId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.EntryId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.EntryId })
+                </td>
+            </tr>
+        }
+
+    </table>
+    </div>
