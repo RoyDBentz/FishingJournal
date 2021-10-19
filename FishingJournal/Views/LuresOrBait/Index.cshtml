@@ -7,52 +7,51 @@
 <h2>Tackle Box</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Add lure or bait", "Create")
 </p>
-<table class="table">
+<table class="table" style="text-align:center; font-size:large">
     <tr>        
-        <th>
+        <th style="text-align:center; border:none">
             @Html.DisplayNameFor(model => model.Artificial)
         </th>
-        <th>
+        <th style="text-align: center; border: none">
             @Html.DisplayNameFor(model => model.LureName)
         </th>
-        <th>
+        <th style="text-align: center; border: none">
             @Html.DisplayNameFor(model => model.Color)
-        </th>
-        <th>
+        </th >
+        <th style="text-align: center; border: none">
             @Html.DisplayNameFor(model => model.ArtificialType)
         </th>
-        <th>
+        <th style="text-align: center; border: none">
             @Html.DisplayNameFor(model => model.Weight)
         </th>
-        <th>
+        <th style="text-align: center; border: none">
             @Html.DisplayNameFor(model => model.Depth)
-        </th>
-        <th></th>
+        </th>        
     </tr>
 
 @foreach (var item in Model) {
     <tr>        
-        <td>
+        <td style="border:none">
             @Html.DisplayFor(modelItem => item.Artificial)
         </td>
-        <td>
+        <td style="border:none">
             @Html.DisplayFor(modelItem => item.LureName)
         </td>
-        <td>
+        <td style="border:none">
             @Html.DisplayFor(modelItem => item.Color)
         </td>
-        <td>
+        <td style="border:none">
             @Html.DisplayFor(modelItem => item.ArtificialType)
         </td>
-        <td>
+        <td style="border:none">
             @Html.DisplayFor(modelItem => item.Weight)
         </td>
-        <td>
+        <td style="border:none">
             @Html.DisplayFor(modelItem => item.Depth)
         </td>
-        <td>
+        <td style="border:none">
             @Html.ActionLink("Edit", "Edit", new { id=item.LureId }) |
             @Html.ActionLink("Details", "Details", new { id=item.LureId }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.LureId })

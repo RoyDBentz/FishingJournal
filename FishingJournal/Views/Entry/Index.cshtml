@@ -7,42 +7,39 @@
 <h2>Fishing Journal</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Add trip", "Create")
 </p>
 
 <audio autoplay loop>
     <source src="~/Content/NightFishingNoises.mp3" />
 </audio>
 
-<table class="table" ; font-size:xx-large; text-align:center">
+<table class="table" style="text-align:center; font-size:large">
     <tr>
-
-        <th>
+        <th style="text-align:center; border:none">
             @Html.DisplayNameFor(model => model.JournalDate)
         </th>
-        <th>
+        <th style="text-align: center; border: none">
             @Html.DisplayNameFor(model => model.TotalFishCaught)
         </th>
-        <th>
+        <th style="text-align: center; border: none">
             @Html.DisplayNameFor(model => model.Location)
-        </th>
-        <th></th>
+        </th>        
     </tr>
 
     @foreach (var item in Model)
     {
         <tr>
-
-            <td>
+            <td style="border:none">
                 @Html.DisplayFor(modelItem => item.JournalDate)
             </td>
-            <td>
+            <td style="border:none">
                 @Html.DisplayFor(modelItem => item.TotalFishCaught)
             </td>
-            <td>
+            <td style="border:none">
                 @Html.DisplayFor(modelItem => item.Location)
             </td>
-            <td>
+            <td style="border:none">
                 @Html.ActionLink("Edit", "Edit", new { id = item.EntryId }) |
                 @Html.ActionLink("Details", "Details", new { id = item.EntryId }) |
                 @Html.ActionLink("Delete", "Delete", new { id = item.EntryId })
